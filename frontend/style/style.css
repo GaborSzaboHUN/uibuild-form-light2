@@ -1,0 +1,128 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #c0ebf9;
+}
+
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 640px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.form-container>h1 {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #467745;
+}
+
+.form-container>input {
+    max-width: 600px;
+    width: 100%;
+    height: 64px;
+
+    margin-bottom: 20px;
+    padding: 0 20px;
+
+    font-weight: 500;
+    font-size: 16px;
+    color: #467745;
+    background-color: white;
+}
+
+.form-container>input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    color: #467745;
+}
+
+.form-container>textarea {
+    max-width: 600px;
+    width: 100%;
+    height: 120px;
+
+    margin-bottom: 20px;
+    padding: 20px;
+
+
+    font-weight: 400;
+    font-size: 16px;
+    color: #467745;
+    background-color: white;
+}
+
+.form-container>textarea::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    color: #467745;
+}
+
+.form-container>.form-group {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    max-width: 500px;
+    width: 100%;
+
+    margin: 0 auto 20px;
+}
+
+.form-container>.form-group>p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #467745;
+}
+
+.form-container>.form-group>div {
+    width: 18px;
+    height: 18px;
+}
+
+.form-container>.form-group>div>input {
+    width: 18px;
+    height: 18px;
+
+    appearance: none;
+    border-radius: 0;
+}
+
+.form-container>.form-group>div>input:not(:checked) {
+    background-color: white;
+}
+
+.form-container>.form-group>div>input:checked {
+    background-color: #467745;
+}
+
+.form-container>button {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    max-width: 280px;
+    width: 100%;
+    height: 80px;
+
+    font-weight: 700;
+    font-size: 21px;
+    letter-spacing: .2em;
+    color: #c0ebf9;
+
+    background-color: #467745;
+}
+
+
+
+@media screen and (max-width:640px) {
+    .form-container>h1 {
+        text-align: left;
+    }
+}
